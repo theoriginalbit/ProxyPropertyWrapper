@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 6.0
 
 import PackageDescription
 
@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "ProxyPropertyWrapper", targets: ["ProxyPropertyWrapper"]),
     ],
     targets: [
-        .target(name: "ProxyPropertyWrapper"),
-        .testTarget(name: "ProxyPropertyWrapperTests", dependencies: ["ProxyPropertyWrapper"]),
+        .target(name: "ProxyPropertyWrapper", path: "Sources"),
+        .testTarget(name: "ProxyPropertyWrapperTests", dependencies: ["ProxyPropertyWrapper"], path: "Tests"),
     ]
 )

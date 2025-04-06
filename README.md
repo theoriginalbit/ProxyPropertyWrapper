@@ -74,4 +74,4 @@ class HeaderView: UIView {
 }
 ```
 
-As an added bonus we can also choose to omit the type information (`: String?`) from the property too, as the compiler can infer it from the key path, further reducing the boilerplate we must type.
+As an added bonus we can also choose to omit the type information (`: String?`) from the property too, as the compiler can infer it from the key path, further reducing the boilerplate.
